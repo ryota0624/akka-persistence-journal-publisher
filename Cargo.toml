@@ -1,0 +1,24 @@
+[package]
+name = "akka-persistence-journal-publisher"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = "0.4.1"
+aws-types = "0.4.1"
+aws-sdk-sns = "0.4.1"
+tokio = { version = "1", features = ["full"] }
+serde = "1.0.75"
+serde_json = "1.0.75"
+lambda_runtime = "0.4.1"
+prost = "0.9.0"
+prost-types = "0.9.0"
+base64 = "0.13.0"
+anyhow = "1.0.52"
+http = "0.2.6"
+log = "0.4.14"
+
+[build-dependencies]
+prost-build = "0.9.0"

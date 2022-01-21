@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+// Add package name for prost
+package publisher_message;
+
+message DeliveredDomainEvent {
+  required bytes body = 1;
+  optional int64 akka_persistence_sequenceNr = 2;
+  optional string akka_persistence_persistenceId = 3;
+  required sint64 timestamp = 4;
+}
